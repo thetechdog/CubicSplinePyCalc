@@ -1,7 +1,7 @@
 # CubicSplinePyCalc
 A cubic spline calculator in Python 3  
 Features:  
-- Calculate natural and cubic splines  
+- Calculate natural and clamped cubic splines  
 - Read and write NPZ files  
 - Create NPZ file from custom data or from existing text file  
 - Draw and interact with the spline  
