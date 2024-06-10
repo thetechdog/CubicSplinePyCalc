@@ -254,7 +254,7 @@ def openAbout():
     about=QMessageBox()
     about.setIcon(QMessageBox.Icon.Information)
     about.setWindowTitle('About')
-    about.setText('CubicSplinePyCalc Version 1.0.1\nAndrei Ionel - Copyright 2024')
+    about.setText('CubicSplinePyCalc Version 1.0.1\nAndrei Ionel - Copyright 2024\nLicensed under the LGPLv2.1 license')
     about.setStandardButtons(QMessageBox.StandardButton.Ok)
     about.setDefaultButton(QMessageBox.StandardButton.Ok)
     about.exec()
