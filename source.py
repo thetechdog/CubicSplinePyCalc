@@ -141,7 +141,7 @@ layout.addWidget(dateFisier, 1, 5)
 dialogSelectie=QFileDialog()
 dialogSelectie.setFileMode(QFileDialog.FileMode.ExistingFile)
 dialogSelectie.setNameFilter("NumPy Archive (*.npz)")
-butdiag=QPushButton('Open file') #fisier la f.princ.
+butdiag=QPushButton('Open file') 
 layout.addWidget(butdiag, 5,5)
 
 boxFPO=QLineEdit(placeholderText='Enter FPO')
