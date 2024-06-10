@@ -152,7 +152,7 @@ boxFPO.setText("0.5")
 layout.addWidget(boxFPO,3,5)
 boxFPN.setText("1.5")
 layout.addWidget(boxFPN,4,5)
-labelFP=QLabel('Enter FPO and FPN')
+labelFP=QLabel('Enter FPO and FPN:')
 layout.addWidget(labelFP,2,5)
   
 label=QLabel('Input coefficients for the custom function: f(x)=a0*x^3+b0*x^2+c0*x+d0')
@@ -201,6 +201,9 @@ layout.addWidget(loopImagine,12,5)
 biesire=QPushButton("Leave")
 layout.addWidget(biesire,12,6,2,1)
 
+about=QPushButton("About")
+layout.addWidget(about,11,6,2,1)
+
 #design NPZ
 npz=QDialog()
 npz.setWindowTitle('NPZ Creator')
@@ -247,7 +250,14 @@ dialogSelectie2.setFileMode(QFileDialog.FileMode.ExistingFile)
 dialogSelectie2.setNameFilter("Text file (*.txt);;All files (*)")
 
  
-
+def openAbout():
+    about=QMessageBox()
+    about.setIcon(QMessageBox.Icon.Information)
+    about.setWindowTitle('About')
+    about.setText('CubicSplinePyCalc Version 1.0.1\nAndrei Ionel - Copyright 2024')
+    about.setStandardButtons(QMessageBox.StandardButton.Ok)
+    about.setDefaultButton(QMessageBox.StandardButton.Ok)
+    about.exec()
 
 
 def btn_pushed():
@@ -518,6 +528,7 @@ dateCustom.setChecked(True)
 butdiag.clicked.connect(selectFisier)
 npzcreator.clicked.connect(execNPZ)
 biesire.clicked.connect(iesire)
+about.clicked.connect(openAbout)
 savername.setEnabled(False)
 saverdate.setEnabled(False)
 saverdate.setChecked(True)
