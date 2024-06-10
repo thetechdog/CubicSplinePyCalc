@@ -437,7 +437,7 @@ def animatie():
                 a,b,c,d=clampcubspline(x,flagcustomizare)
                 
                 
-            for i in range(1,len(x)+1): #salveaza cate o imagine pt fiecare portiune a spline-ului
+            for i in range(1,len(x)+1):
                 x_values=np.linspace(min(x[:i]), max(x[:i]), len(x[:i]))
                 y_values=valorispline(x[:i], x_values, a, b, c, d) 
                 figura=plt.figure(figsize=(14, 4))
