@@ -472,7 +472,7 @@ def animatie():
             
 
         except Exception as e:
-            QMessageBox.warning(dialogSelectie2, 'Eroare', f'Nu s-a putut salva fisierul... Error: {e}')
+            QMessageBox.warning(dialogSelectie2, 'Error', f'File could not be saved... Error: {e}')
 
 
   
