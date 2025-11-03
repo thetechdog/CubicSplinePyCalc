@@ -10,5 +10,5 @@ Features:
 Screenshot:  
 ![spline](https://github.com/user-attachments/assets/f80a8d8a-75d6-41ec-b5b1-fea4489ead2e)
 
-Licensed under the LGPL  
+Licensed under the MIT License  
 Copyright Andrei Ionel 2024
